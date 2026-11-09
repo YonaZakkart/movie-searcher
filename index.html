@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakkart | Movie Searcher</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts: clean and elegant -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="https://github.com/YonaZakkart" class="logo" target="_blank" rel="noopener noreferrer" title="YonaZakkart on GitHub">
+          <span class="logo-mark">Z</span>
+          <span class="logo-text">Zakkart</span>
+        </a>
+        <div class="lang-switcher">
+          <button id="btn-lang-en" class="lang-btn active" data-lang="en">EN</button>
+          <button id="btn-lang-es" class="lang-btn" data-lang="es">ES</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+      <div class="container">
+        <section class="hero">
+          <h1 id="page-title" class="hero-title">Movie Searcher</h1>
+          <p id="page-subtitle" class="hero-subtitle">
+            Search for any movie and get title, year and synopsis
+          </p>
+        </section>
+
+        <!-- Search form -->
+        <section class="search-section">
+          <form id="search-form" class="search-form" novalidate>
+            <div class="input-group">
+              <input
+                type="text"
+                id="movie-input"
+                class="search-input"
+                placeholder="Type a movie title..."
+                autocomplete="off"
+                required
+              >
+              <button type="submit" id="btn-search" class="btn-search">
+                Search
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Results area -->
+        <section id="results" class="results" aria-live="polite">
+          <!-- Dynamic content goes here -->
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-heading">Zakkart</h3>
+          <p class="footer-text">
+            Front-End practice project from Bootcamp WDFRT1
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading" id="footer-about-title">About</h3>
+          <p class="footer-text" id="footer-about-text">
+            Simple movie searcher built with HTML, CSS and vanilla JavaScript
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading" id="footer-author-title">Author</h3>
+          <p class="footer-text">
+            <a href="https://github.com/YonaZakkart" target="_blank" rel="noopener noreferrer">YonaZakkart</a>
+          </p>
+          <p class="footer-text" id="footer-projects-label">Other projects:</p>
+          <ul class="footer-links">
+            <li><a href="https://github.com/YonaZakkart/yoro" target="_blank" rel="noopener noreferrer">Yoro</a></li>
+            <li><a href="https://github.com/YonaZakkart/Memory-Game---NecoArc" target="_blank" rel="noopener noreferrer">Memory-Game</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading" id="footer-links-title">Links</h3>
+          <ul class="footer-links">
+            <li><a href="https://github.com/YonaZakkart" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDB</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p id="footer-credit">
+            This product uses the TMDB API but is not endorsed or certified by TMDB
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+    <!-- config.js holds the API key (gitignored). Copy from config.example.js -->
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
